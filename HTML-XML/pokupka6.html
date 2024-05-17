@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="str1.css" rel="stylesheet" media="all">
+    <link rel="icon" href="logo.jpg" style="width: 40px;">
+    <title>OGNIKCROSS52</title>
+</head>
+<body>
+    <heder>
+    <div class = "a">
+<div class="c">
+    <img src="logo.jpg">
+OGNIKCROSS
+</div>
+    </div>
+   <div class="navbar">
+    <a href="men.html">МУЖСКИЕ</a>
+    <a href="women.html">ЖЕНСКИЕ</a>
+    <a href="acses.html">АКСЕССУАРЫ</a>
+    <a href="racpr.html">РАСПРОДАЖА</a>
+    <a href="o_nas.html">О НАС</a>
+    <a href="contacts.html">КОНТАКТЫ</a>
+          </div>
+</heder>
+
+<div class="cont">
+<div class="pok">
+    <div class="og">
+<div class="verh"><img src="F803103.jpg" class="cross" id="fullImage"></div>
+<div class="nis">
+    <img src="F803103.jpg" class="cross11"  onclick="showFullImage('F803103.jpg')">
+    <img src="F803103-1.jpg" class="cross12"  onclick="showFullImage('F803103-1.jpg')">
+    <img src="F803103-2.jpg" class="cross12"  onclick="showFullImage('F803103-2.jpg')">
+    <img src="F803103-3.jpg" class="cross12"  onclick="showFullImage('F803103-3.jpg')">
+</div>
+</div>
+
+<div class="inf">
+    <p id="q">Женские кроссовки</p>
+    <p id="q">Karhu Aria 95 W LWC</p>
+    <p id="q">290,52 Br</p>
+    <p><span style ="font-weight: bold;">Материалы: </span> <span style ="font-style: oblique;">Натуральная кожа, текстиль, резина</span></p>
+    <p><span style ="font-weight: bold;">Цвет: </span> <span style ="font-style: oblique; ">Бежевый</span></p>
+    <p><span style ="font-weight: bold;">Страна производства: </span><span style ="font-style: oblique;">Вьетнам</span> </p>
+    <p><span style ="font-weight: bold;">Сезон: </span><span style ="font-style: oblique;">Весна </span> </p>
+    <button id="showMessageBtn">ОФОРМИТЬ ЗАКАЗ</button>
+</div>
+</div>
+</div>
+<script>
+function showMessage() {
+    // Создаем контейнер сообщения
+    var messageContainer = document.createElement('div');
+    messageContainer.style.width = '400px';
+    messageContainer.style.height = '450px'; // Увеличим высоту для удобства
+    messageContainer.style.position = 'fixed';
+    messageContainer.style.top = '50%'; // Положение по вертикали в середине экрана
+    messageContainer.style.left = '50%'; // Положение по горизонтали в середине экрана
+    messageContainer.style.transform = 'translate(-50%, -50%)'; // Центрирование по середине экрана
+    messageContainer.style.backgroundColor = 'grey'; // Фон сообщения
+    messageContainer.style.color = '#fff'; // Цвет текста
+    messageContainer.style.padding = '10px'; // Отступы
+    messageContainer.style.borderRadius = '5px'; // Скругляем углы
+
+    // Создаем текстовое поле для ввода имени
+    var nameInput = createInputField('Введите ваше имя', 'Имя');
+
+    // Создаем текстовое поле для ввода телефона
+    var phoneInput = createInputField('Введите ваш телефон', 'Телефон');
+
+    // Создаем текстовое поле для ввода электронной почты
+    var emailInput = createInputField('Введите вашу эл.почту', 'Эл. почта');
+
+    // Создаем выпадающий список для выбора размера
+    var sizeSelect = createSelectField(['39', '40', '41', '42', '43', '44', '45'], 'Размер');
+
+    // Создаем кнопку "Отправить"
+    var sendButton = document.createElement('button');
+    sendButton.textContent = 'Отправить';
+    sendButton.style.width = '50%';
+
+    // Обработчик события для кнопки "Отправить"
+    sendButton.addEventListener('click', function() {
+        // Создаем блок с текстом "Спасибо за покупку!"
+        var thankYouMessage = document.createElement('div');
+        thankYouMessage.textContent = 'Спасибо за заказ! Скоро с вами свяжется оператор для подтверждения заказа.';
+        thankYouMessage.style.fontSize = '20px';
+        thankYouMessage.style.marginTop = '10px'; // Добавляем небольшой отступ сверху
+
+        // Добавляем блок с текстом "Спасибо за покупку!" в контейнер сообщения
+        messageContainer.appendChild(thankYouMessage);
+
+        // Устанавливаем таймер для удаления сообщения через 10 секунд
+        setTimeout(function() {
+            messageContainer.remove(); // Удаляем сообщение
+        }, 10000);
+    });
+
+    // Добавляем текстовые поля и кнопку в контейнер сообщения
+    messageContainer.appendChild(createLabel('Имя')); // Добавляем label перед полем для ввода имени
+    messageContainer.appendChild(nameInput);
+    messageContainer.appendChild(document.createElement('br')); // Добавляем перенос строки
+    messageContainer.appendChild(createLabel('Телефон')); // Добавляем label перед полем для ввода телефона
+    messageContainer.appendChild(phoneInput);
+    messageContainer.appendChild(document.createElement('br'));
+    messageContainer.appendChild(createLabel('Эл. почта')); // Добавляем label перед полем для ввода эл. почты
+    messageContainer.appendChild(emailInput);
+    messageContainer.appendChild(document.createElement('br'));
+    messageContainer.appendChild(createLabel('Размер')); // Добавляем label перед полем для выбора размера
+    messageContainer.appendChild(sizeSelect);
+    messageContainer.appendChild(document.createElement('br'));
+    messageContainer.appendChild(sendButton);
+
+    // Добавляем контейнер сообщения на страницу
+    document.body.appendChild(messageContainer);
+}
+
+// Функция для создания текстового поля с указанным placeholder и label
+function createInputField(placeholderText, labelText) {
+    var container = document.createElement('div');
+    container.style.display = 'flex'; // Устанавливаем flex-контейнер для элементов в одной строке
+    var label = createLabel(labelText);
+    label.style.marginRight = '10px'; // Добавляем небольшой отступ между меткой и полем ввода
+    var inputField = document.createElement('input');
+    inputField.type = 'text';
+    inputField.placeholder = placeholderText;
+    inputField.style.width = '100%';
+    container.appendChild(label);
+    container.appendChild(inputField);
+    return container;
+}
+
+// Функция для создания label с указанным текстом
+function createLabel(labelText) {
+    var label = document.createElement('label');
+    label.textContent = labelText + ': ';
+    label.style.marginBottom = '10px'; // Добавляем отступ снизу
+    return label;
+}
+
+// Функция для создания выпадающего списка с указанными опциями и label
+function createSelectField(options, labelText) {
+    var container = document.createElement('div');
+    container.style.display = 'flex'; // Устанавливаем flex-контейнер для элементов в одной строке
+    var label = createLabel(labelText);
+    label.style.marginRight = '10px'; // Добавляем небольшой отступ между меткой и списком
+    var selectField = document.createElement('select');
+    options.forEach(function(option) {
+        var optionElement = document.createElement('option');
+        optionElement.textContent = option;
+        selectField.appendChild(optionElement);
+    });
+    selectField.style.width = '100%';
+    container.appendChild(label);
+    container.appendChild(selectField);
+    return container;
+}
+
+
+// Находим кнопку
+var button = document.getElementById('showMessageBtn');
+
+// Назначаем обработчик события клика на кнопку
+button.addEventListener('click', showMessage);
+
+// Глобальная переменная для отслеживания показа сообщения
+var messageShown = false;
+
+
+</script>
+<script src="yypppp.js"></script>
+
+
+<footer> 
+    <div class="info">
+        <p>Адрес магазина, время работы и телефон:</p>
+        <p>г. Минск, Белорусская 52</p>
+        <p>с 11:00 до 20:00 без выходных</p>
+        <p>+375447747338</p>
+    </div>
+    <div class="owner-info">
+        <p>ИП Яговдик Владислав Владимирович</p>
+        <p>УНП 10345252</p>
+        <p>220052 г. Минск</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/braundz3rg/"><img src="ins.png" alt="Instagram"></a>
+        <a href="https://vk.com/vladvladlvad"><img class="vkIcon" src="vkproz.png" alt="VKontakte"></a>
+        <a href="https://t.me/braundz"><img class="tgIcon" src="tg.jpg" alt="Telegram"></a>
+    </div>
+</footer>
+
+</body>
+</html>
