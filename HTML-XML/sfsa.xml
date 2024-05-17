@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="oggnik.xsl"?>
+<cross>
+    <cros>
+        <brend>adidas</brend>
+        <model>samba</model>
+        <color>grey</color>
+    </cros>
+    <cros>
+        <brend>nike</brend>
+        <model>dunk</model>
+        <color>blue</color>
+    </cros>
+    <cros>
+        <brend>asics</brend>
+        <model>gel nuk</model>
+        <color>red</color>
+    </cros>
+</cross>
