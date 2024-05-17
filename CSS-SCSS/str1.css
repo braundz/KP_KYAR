@@ -1,0 +1,647 @@
+body {
+  margin: 0;
+}
+.a {
+   display: flex;
+   justify-content: center; /* Выравнивание по горизонтали */
+   align-items: center; 
+   background-color: rgba(25, 26, 25, 0.87); 
+   height: 156px;
+   width :100% ;
+}
+/* Стили для панели навигации */
+.navbar {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #F08828;
+    height: 64px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Стили для ссылок на панели навигации */
+  .navbar a {
+
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 22px;
+    text-decoration: none;
+    font-size: 20px ;
+    font-family:'Segoe UI';
+    font-weight: 500;
+  }
+  
+  /* При наведении курсора, ссылки изменят цвет */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    border:4px solid #000000;
+    
+  }
+
+.c {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #13111C; 
+    height: 132px;
+    width : 770px;
+    border-radius: 15px;
+    font-family: 'IrishGrover-Regular';
+    color: white;
+    font-size: 100px;
+}
+.c img {
+  width : 132px;
+  height: 132px;
+}
+@font-face 
+{
+font-family: 'KyivTypeTitling-VarGX';
+src: url('fonts1/KyivTypeTitling-VarGX.ttf') ;        
+}
+@font-face 
+{
+font-family: 'IrishGrover-Regular';
+src: url('fonts1/IrishGrover-Regular.ttf') ;        
+}
+.d {
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center; 
+    height: 80px;
+    width: 100%;
+    font-family: 'KyivTypeTitling-VarGX';
+    font-size: 17pt;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.photo-row {
+    display: flex;
+ 
+
+    flex-direction: row; /* Горизонтальное расположение по умолчанию */
+    justify-content: space-between; /* Распределение между фотографиями */
+  }
+  
+
+
+  .photo-row img {
+    width: 460px;
+    width: calc(33.33%); /* Учитываем ширину и расстояние между фотографиями */
+    margin-right: 8px; 
+    height: 460px; 
+    margin-bottom: 45px
+  }
+
+  .e {
+   background-color: rgba(25, 26, 25, 0.87);
+   height: 151px;
+   width :100% ;
+
+ }
+ footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(25, 26, 25, 0.87);
+    color: rgba(255, 255, 255, 0.77);
+    padding: 20px;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1pt;
+ }
+ 
+ .info, .owner-info {
+    max-width: 300px;
+ }
+ 
+ .social-icons img {
+    width: 75px; 
+    margin-top: 10px;
+    margin-right: 25px;
+ }
+
+ .round-image {
+    border-radius: 50%; 
+  }
+
+.hit {
+display: flex;
+background-color:rgb(212, 218, 223);
+height: 55px;
+}
+#hit {
+  margin: auto;
+  font-size: 35px;
+  letter-spacing: 6px;
+  color: rgb(48, 38, 38);
+  font-family: 'KyivTypeTitling-VarGX';
+  font-weight: bold;
+}
+
+  /* !!!! О НАС !!!! */
+
+  
+
+
+.o_nas {
+    display: flex;
+    align-items: flex-start; /* Расположение по верхнему краю */
+}
+
+.photo {
+    width: 50%; /* Ширина фотографии */
+}
+
+.photo img {
+    max-width: 100%; /* Фото будет ресайзиться, чтобы уместиться в блок */
+    display: block; /* Избавляемся от пробелов между фото и границ блока */
+}
+
+.o_nas2 { 
+    width: 588px;
+    height: 545px;
+    padding: 20px; /* Отступы от краев блока */
+    box-sizing: border-box; /* Учитываем padding в общей ширине блока */
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    margin-left: 40px;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #CACACA;
+    width: 588px;
+    height: 545px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+/* ПОКУПКАААВМВЫПВВПА*/
+/* ПОКУПКАААВМВЫПВВПА*/
+
+.cont {
+  display:flex;
+  justify-content: center; /* Размещаем содержимое по горизонтали по центру */
+  align-items: center; 
+  align-items: flex-start
+}
+.pok {
+  display:flex;
+  width: 1247px;
+  height: 557px;
+  background-color: #F1F1F1;
+  margin-bottom: 80px;
+
+}
+.cross {
+  border: #000000 4px solid;
+  image-rendering:optimizeQuality;
+  float: left;
+  max-width: 100%; /* Фото будет ресайзиться, чтобы уместиться в блок */
+  width: 573px;
+  height: 345px;
+  margin-top: 64px;
+  margin-left: 104px;
+  display: flex; /* Избавляемся от пробелов между фото и границ блока */
+}
+
+
+.og {
+
+  flex: 0 0 50%; /* 60% ширины */
+}
+.inf {
+
+  margin-top: 45px;
+  margin-left: 30px;
+  padding-left:20px ;
+  height: 300px;
+  
+ 
+  font-size: 22px;
+  flex: 0 0 50%; /* 40% ширины */
+}
+.verh {
+  height: 425px;
+}
+.nis {
+display: flex;
+}
+.cross11 {
+  cursor: pointer; /* Показывает, что изображение кликабельно */
+  border: #000000 3px solid;
+  float: left;
+  max-width: 100%; /* Фото будет ресайзиться, чтобы уместиться в блок */
+  width: 180px;
+  height: 105px;
+  margin-left: 104px;
+}
+.cross12 {
+  cursor: pointer; /* Показывает, что изображение кликабельно */
+  border: #000000 3px solid;
+  float: left;
+  
+  width: 176px;
+  height: 105px;
+  margin-left: 11px;
+}
+#q {
+  font-weight: bold;
+}
+#q1 {
+  font-weight: bold;
+}
+#q2 {
+  font-weight: bold;
+}
+#showMessageBtn  {
+  margin-top:10px;
+  background-color: #F08828;
+  border: 0px;
+  padding: 18px;
+  border-radius: 50px;
+  font-size: large;
+  font-weight:600;  
+  letter-spacing: 1px;
+
+}
+
+
+.vkIcon {
+border-radius: 1500px;   /* для социальных */
+}
+
+.tgIcon {
+  border-radius: 1500px;   /* для социальных */
+  }
+
+  .podrob {
+    text-decoration: none;
+    background-color:burlywood;
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+/*    MMMEEEEEEEEEEENNNN   */
+.men {
+  display: flex;
+  margin: auto;
+  background-color: #CACACA;
+  height: 55px;
+  width: 945px;
+}
+#men {
+  margin: auto;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  
+}
+
+.brends {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  background-color: #F1F1F1;
+  height: 55px;
+  width: 945px;
+}
+
+/* Стили для ссылок на панели навигации */
+.brends a {
+  display: flex;
+  color: black;
+  text-align: center;
+  padding: 27px;
+  text-decoration: none;
+  font-size: 20px ;
+  font-family:'Segoe UI';
+  font-weight: 500;
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; 
+}
+
+.line {
+        justify-content: center;
+        display: flex; /* Используем Flexbox для расположения блоков */
+}
+.ocn {
+  margin: 20px;
+  height: 306px;
+  width: 342px; /* Ширина каждого блока (25% от общей ширины контейнера) */
+  padding: 0px; /* Добавляем отступы вокруг блоков */
+  border: 5px solid black; /* Добавляем границы для видимости блоков */
+}
+#wewe {
+  height: 217px;
+  width: 319px;
+}
+.rere {
+  height: 68px;
+  width: 330px;
+  background-color: #E6E6E6;
+}
+.ocn p {
+  margin-left: 28px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+
+.ocn,button:hover {
+  cursor: pointer; /* Изменяем курсор при наведении */
+}
+
+
+
+
+/*    HEEEEEDDDEEEERRR    */
+/*    хеееедеееееер     */
+
+@media (max-width:968px) {
+  .social-icons img {
+    width: 70px; 
+ }
+}
+
+@media (max-width:900px) {
+  .navbar a {
+    font-size:15px;
+ }
+}
+@media (max-width:750px) {
+  .navbar a {
+    font-size:13px;
+ }
+}
+@media (max-width:895px) {
+  .navbar {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+ }
+ .navbar a {
+  text-align: center;
+  text-decoration: none;
+  padding: 14px;
+}
+.c  {
+  height: 100px;
+}
+.a {
+    
+  height: 120px;
+}
+.c img {
+  width : 100px;
+  height: 100px;
+}
+.c {
+  width : 600px;
+  font-size: 70px;
+}
+}
+ @media (max-width:610px) {
+  .c img  {
+      width: 60px;
+      height: 60px; }
+  .c    {
+      font-size: 50px;
+      }
+  .a  {
+      height: 95px;
+  }
+  .c {
+      width: 400px;
+      height: 75px;
+ }
+ .navbar a  {
+  font-size: 12px ;
+}
+}
+ @media (max-width:555px) {
+  .navbar a  {
+       font-size: 10px ;
+       padding: 10px;
+  }
+  .navbar{
+      height: 30px; ;
+  }
+ }
+ @media (max-width:450px) {
+  .navbar a  {
+       font-size: 8px ;
+       padding: 8px;
+  }
+  .navbar{
+      height: 25px; ;
+  }
+ }
+ @media (max-width:435px) {
+  .c img  {
+      width: 55px;
+      height: 55px; }
+  .c    {
+      font-size: 39px;
+      }
+  .a  {
+      height: 72px;
+  }
+  .c {
+      width: 330px;
+      height: 55px;
+ }
+}
+
+/* TRHUIOLKYUJEFR FOOOOOTEEERRR */
+/*    FOOOOTTTTEEERRRR   */
+
+@media (max-width:968px) {
+  .social-icons img {
+    width: 70px; 
+ }
+}
+@media (max-width:920px) {
+  .footer {
+    font-size: 14px; 
+ }
+}
+@media (max-width:880px) {
+  .social-icons img {
+    width: 50px; 
+ }
+ .footer {
+  font-size: 12px; 
+}
+}
+@media (max-width:820px) {
+  .social-icons img {
+    width: 40px; 
+ }
+ .footer {
+  font-size: 10px; 
+  height: 75px; ;
+}
+}
+@media (max-width:625px) {
+  .social-icons img {
+    width: 33px; 
+ }
+ .footer {
+  font-size: 9px; 
+  height: 65px; ;
+}
+}
+@media (max-width:680px) {
+  .social-icons img {
+    width: 30px; 
+ }
+ .footer {
+  font-size: 8px; 
+  height: 60px; ;
+}
+}
+@media (max-width:580px) {
+  .social-icons img {
+    width: 29px; 
+ }
+ .footer {
+  font-size: 8px; 
+  height: 55px; 
+}
+}
+@media (max-width:580px) {
+  .social-icons img {
+    width: 29px; 
+ }
+ .footer {
+  font-size: 7px; 
+  height: 50px; ;
+}
+.photo-row img {
+  margin-bottom: 25px
+}
+}
+@media (max-width:530px) {
+  .social-icons img {
+    width: 27px; 
+ }
+ .footer {
+  font-size: 6px; 
+  height: 50px; ;
+}
+}
+@media (max-width:485px) {
+  .social-icons img {
+    width: 26px; 
+ }
+ .footer {
+  font-size: 5px; 
+  height: 40px; ;
+}
+.photo-row img {
+  margin-bottom: 18px
+}
+}
+@media (max-width:440px) {
+  .social-icons img {
+    width: 26px; 
+ }
+ .footer {
+  font-size: 4px; 
+  height: 20px; 
+  padding: 10px;
+}
+.photo-row img {
+  margin-bottom: 15px
+}
+}
+
+/* TRHUIOLKYUJEFR ceeeenteeeerrrr */
+/* CEEEEENTTEEEER  */  
+
+
+@media (max-width:860px) {
+  .d {
+    font-size: 18px; 
+    height: 60px;
+ }
+}
+@media (max-width:730px) {
+  .d {
+    font-size: 16px; 
+    height: 54px;
+    letter-spacing: 7px;
+ }
+}
+@media (max-width:700px) {
+  .d {
+    font-size: 14px; 
+    height: 48px;
+    letter-spacing: 6px;
+ }
+}
+@media (max-width:650px) {
+  .d {
+    font-size: 14px; 
+    height: 50px;
+    letter-spacing: 5px;
+ }
+}
+@media (max-width:540px) {
+  .d {
+    font-size: 12px; 
+    height: 45px;
+    letter-spacing: 4px;
+ }
+}
+@media (max-width:455px) {
+  .d {
+    font-size: 10px; 
+    height: 35px;
+    letter-spacing: 2px;
+ }
+}
+@media (max-width:780px) {
+  .photo-row {
+   display: block;
+  }
+  .header {
+    max-width: 600px;
+  }
+}
+
+  /* Медиа-запрос для маленьких экранов */
+  @media  (max-width: 700px) {
+    .photo-row {
+        flex-direction: column; /* Вертикальное расположение на маленьких экранах */
+    }
+  }
+  
+
+  @media (max-width:650px ){
+    .photo-row {
+      flex-direction: column; /* Вертикальное расположение на маленьких экранах */
+      display: flex;
+    justify-content: space-between;
+    }
+      }
+
+      @media (max-width:780px ){
+        .photo-row img {
+          height: 250px;
+          width: 80%; /* Задаем ширину изображения */
+          display: block; /* Делаем изображение блочным элементом */
+          margin: 0 auto; /* Устанавливаем автоматичесные отступы слева и справа, что выровняет изображение по центру */
+        }
+          }
